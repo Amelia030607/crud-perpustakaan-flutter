@@ -49,18 +49,18 @@ class _BookListPageState extends State<BookListPage> {
          itemBuilder: (context, index) {
           final book = Books[index];
           return ListTile(
-            title: Text(book['judul'] ?? 'No Title', style: const TextStyle(
+            title: Text(book['title'] ?? 'No Title', style: const TextStyle(
               fontSize: 18.0,
               fontWeight: FontWeight.bold,
             )),
             subtitle: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(book['penulis'] ?? 'No Author', style: TextStyle(
+                Text(book['author'] ?? 'No Author', style: TextStyle(
                   fontStyle: FontStyle.italic,
                   fontSize: 14.0,
                 ),),
-                Text(book['deskripsi'] ?? 'No Description', style: TextStyle(
+                Text(book['description'] ?? 'No Description', style: TextStyle(
                   fontSize: 12.0,
                 ),),
               ],
