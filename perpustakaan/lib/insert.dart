@@ -2,7 +2,7 @@ import 'package:perpustakaan/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-// Widget untuk halaman menambah buku
+// Widget untuk halaman menambah data
 class AddBookPage extends StatefulWidget {
   const AddBookPage({super.key});
 
